@@ -45,10 +45,10 @@ function App() {
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
 
-            <TileLayer
+            {/* <TileLayer
                 attribution="Stadia.OSMBright"
                 url="https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png"
-            />
+            /> */}
 
             <MarkerClusterGroup chunkedLoading iconCreateFunction={createCustomClusterIcon}>
                 {markers.map(marker => (
