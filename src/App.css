@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  gap: 1em;
+  font-family: sans-serif;
+  color: #333;
+  background-color: #f3e4d7;
+}
+
+/* height of the container */
+.leaflet-container {
+  height: 100vh;
+  width: 100%;
+  border-radius: 2rem;
+  z-index: 1;
+}
+
+.cluster-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff0000c1;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 10rem;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  transform: translate(-20%, -20%);
+}
+
+.image-map{
+  width: 17rem;
+  height: 17rem;
+}
+
+.search-location{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  transform: translate(45rem, 2rem);
+  z-index: 999;
+}
+
+.search-location input{
+  background-color: #fff;
+  border: 1px solid #c3c3c3a0;
+  width: 30rem;
+  height: 3rem;
+  border-radius: 10rem;
+  padding: 5% 5% 5% 12%;
+}
+
+.search-location input::placeholder{
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #000000c6;
+}
+
+.search-icon{
+  position: absolute;
+  transform: translate(-13rem, 0.2rem);
+}
